@@ -4,72 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-index.css">
     <title>Indicaí - O seu site para indicação de filmes</title>
 </head>
-<body bgcolor="8E8E8E">
+<body>
     <header>
-        <a href="./index.html"><img src="./imagens/logo.png" width=100px alt="Imagem do logo com o desenho de dois bilhetes de cinema e com a palavra 'Indicaí' escrita dentro de um deles na cor amarela."></a>
+        <a href="./index.html"><img src="./imagens/logo.png" width=90px alt="Logo do site Indicaí"></a>
         <nav>
-            <ul>
+            <ul><div class="nav">
                 <a href="./index.html"><li>Início</li></a>
                 <a href="./sobre-nos.html"><li>Sobre nós</li></a>
                 <a href="./contato.html"><li>Contato</li></a>
-            </ul>
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder="Buscar por filmes..."/>
-                    <img src="./imagens/ícones/busca-icone.png" width=25px id="btnBusca" alt="Imagem do ícone de busca em forma de uma lupa branca."/>
-                </div>
+            </div></ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Encontre o seu próximo filme pelo gênero:</h1>
-            <a href="./filmes-acao.html"><button type="button">Ação</button></a>
+            <div class="menufilmes"><h1>Encontre o seu próximo filme pelo gênero</h1></div>
+            <div class="menufilmes"><a href="./filmes-acao.html"><button type="button">Ação</button></a>
+            <button type="button">Animação</button></a>
             <button type="button">Aventura</button>
             <button type="button">Comédia</button>
             <button type="button">Drama</button>
             <button type="button">Ficção Científica</button>
             <a href="./filmes-romance.html"><button type="button">Romance</button></a>
             <button type="button">Suspense</button>
-            <button type="button">Terror</button>
+            <button type="button">Terror</button></div>
         </section>
         <section>
-            <h2>Filmes em cartaz:</h2>
+            <div class="menufilmes"><h2>Filmes em cartaz</h2></div>
+            <div class="menufilmes">
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=a1w9x5U88jU&pp=ygUVdmVsb3plcyBlIGZ1cmlvc29zIDEw"><img src="./imagens/filmes-em-cartaz/velozes-e-furiosos-10.webp" width=200px alt="Cartaz do filme Velozes e Furiosos 10 com a imagem do elenco principal, a silhueta do Concorvado ao fundo e carros coloridos na frente, com uma mulher de costas no meio dos carros, segurando uma bandeira.">
-                <h4>Velozes e Furiosos 10</h4></a></li>
-                <br>
-                <li><a href="https://www.youtube.com/watch?v=5UVaA6SGRZA&pp=ygUoZ3VhcmRpw7VlcyBkYSBnYWzDoXhpYSAzIHRyYWlsZXIgZHVibGFkbw%3D%3D"><img src="./imagens/filmes-em-cartaz/guardiões-da-galáxia-3.jpg" width=200px alt="Cartaz do filme Guardiões da Galáxia Volume 3 com a imagem do elenco principal, alguns em pé e outros sentados, com o fundo colorido com alguns planetas, estrelas e galáxias.">
-                <h4>Guardiões da Galáxia Vol. 3</h4></a></li>
-                <br>
-                <li><a href="https://www.youtube.com/watch?v=cDNkh5WybZo&pp=ygUZc3VwZXIgbWFyaW8gYnJvcyBvIGZpbG1lIA%3D%3D"><img src="./imagens/filmes-em-cartaz/super-mario-bros.jpg" width=200px alt="Cartaz do filme Super Mario Bros com a imagem das principais personagens e alguns cenários marcantes dos jogos ao fundo.">
-                <h4>Super Mario Bros - O Filme</h4></a></li>
-                <br>
-                <li><a href="https://www.youtube.com/watch?v=5n9v35xgRpw&pp=ygUaYSBtb3J0ZSBkbyBkZW1vbmlvIHRyYWlsZXI%3D"><img src="./imagens/filmes-em-cartaz/a-morte-do-demonio.jpg" width=200px alt="Cartaz do filme A Morte do Demônio: A Ascensão com a personagem principal abraçando três crianças que estão de costas e apenas o rosto da personagem principal para frente, exibindo um sorriso macabro.">
-                <h4>A Morte do Demônio - A Ascensão</h4></a></li>
-                <br>
-                <li><a href="https://www.youtube.com/watch?v=4ej5yjOqBMI&pp=ygUcZHVuZ2VvbnMgYW5kIGRyYWdvbnMgdHJhaWxlcg%3D%3D"><img src="./imagens/filmes-em-cartaz/dungeons-and-dragons-honra-entre-rebeldes.jpg" width=200px alt="Cartaz do filme Dungeons & Dragons: Honra Entre Rebeldes com a imagem do elenco principal, com um dragão na parte inferior voando em um cenário medieval.">
-                <h4>Dungeons & Dragons: Honra Entre Rebeldes</h4></a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Em breve nos cinemas:</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=figLauMgASA"><img src="./imagens/filmes-em-cartaz/the-flash.webp" width=200px alt="Cartaz do filme The Flash com a imagem das três personagens principais de perfil, viradas para a esquerda, em um cenário de destruição.">
+                <li><button type="button"><img src="./imagens/seta-esquerda.png" alt="Imagem de seta para esquerda"></button></li>
+                <li><a href="https://www.youtube.com/watch?v=figLauMgASA"><img src="./imagens/filmes-em-cartaz/the-flash.webp" width=200px alt="Cartaz do filme The Flash">
                 <h4>The Flash</h4></a></li>
                 <br>
-                <li><a href="https://www.youtube.com/watch?v=j4fyrqoZddY&pp=ygUYYSBwZXF1ZW5hIHNlcmVpYSB0cmFpbGVy"><img src="./imagens/filmes-em-cartaz/A-Pequena-Sereia.webp" width=200px alt="Cartaz do filme A Pequena Sereia com a imagem do elenco principal no fundo do mar, com a Ariel no centro, sentada em uma pedra, e com várias espécies de peixes e outros animais aquáticos ao redor.">
+                <li><a href="https://www.youtube.com/watch?v=j4fyrqoZddY&pp=ygUYYSBwZXF1ZW5hIHNlcmVpYSB0cmFpbGVy"><img src="./imagens/filmes-em-cartaz/A-Pequena-Sereia.webp" width=200px alt="Cartaz do filme A Pequena Sereia">
                 <h4>A Pequena Sereia</h4></a></li>
                 <br>
-                <li><a href="https://www.youtube.com/watch?v=4uhOjyhaK1k&pp=ygUWYmFyYmllIHRyYWlsZXIgb2ZpY2lhbA%3D%3D"><img src="./imagens/filmes-em-cartaz/barbie.jpeg" width=200px alt="Cartaz do filme Barbie com a personagem principal sorrindo, dentro de uma carro rosa, na frente de uma mansão rosa, com um céu azul ao fundo.">
+                <li><a href="https://www.youtube.com/watch?v=SS6ABPkfmBE"><img src="./imagens/filmes-em-cartaz/Homem-Aranha_-_Atraves_do_Aranhaverso.jpg" width=200px alt="Cartaz do filme Homem-Aranha: Através Do Aranhaverso">
+                <h4>Homem-Aranha: Através do Aranhaverso</h4></a></li>
+                <br>
+                <li><a href="https://www.youtube.com/watch?v=r-5x_JNiuNM&pp=ygUbQm9vZ2V5bWFuOiBTZXUgTWVkbyDDqSBSZWFs"><img src="./imagens/filmes-em-cartaz/boogeyman-seu-medo-e-real.jpg" width=200px alt="Cartaz do filme Boogeyman: Seu Medo é Real">
+                <h4>Boogeyman: Seu Medo é Real</h4></a></li>
+                <br>
+                <li><a href="https://www.youtube.com/watch?v=PHC412-pCoQ&pp=ygUjVHJhbnNmb3JtZXJzOiBPIERlc3BlcnRhciBkYXMgRmVyYXM%3D"><img src="./imagens/filmes-em-cartaz/Transformers-O-Despertar-das-Feras.jpg" width=200px alt="Cartaz do filme Transformers: O Despertar das Feras">
+                <h4>Transformers: O Despertar das Feras</h4></a></li>
+                <li><button type="button"><img src="./imagens/seta-direita.png" alt="Imagem de seta para direita"></button></li>
+            </ul></div>
+        </section>
+        <section>
+            <div class="menufilmes"><h2>Em breve nos cinemas</h2></div>
+            <div class="menufilmes">
+            <ul>
+                <li><button type="button"><img src="./imagens/seta-esquerda.png" alt="Imagem de seta para esquerda"></button></li>
+                <li><a href="https://www.youtube.com/watch?v=BydjQP2aFd0&pp=ygUPZWxlbWVudG9zIGZpbG1l"><img src="./imagens/filmes-em-cartaz/elementos.jpg" width=200px alt="Cartaz do filme Elementos">
+                <h4>Elementos</h4></a></li>
+                <br>
+                <li><a href="https://www.youtube.com/watch?v=e8-GtGmlu18&pp=ygUdc29icmVuYXR1cmFsIGEgcG9ydGEgdmVybWVsaGE%3D"><img src="./imagens/filmes-em-cartaz/sobrenatural-a-porta-vermelha.jpg" width=200px alt="Cartaz do filme Sobrenatural: A Porta Vermelha">
+                <h4>Sobrenatural: A Porta Vermelha</h4></a></li>
+                <br>
+                <li><a href="https://www.youtube.com/watch?v=4uhOjyhaK1k&pp=ygUWYmFyYmllIHRyYWlsZXIgb2ZpY2lhbA%3D%3D"><img src="./imagens/filmes-em-cartaz/barbie.jpeg" width=200px alt="Cartaz do filme Barbie">
                 <h4>Barbie</h4></a></li>
                 <br>
-                <li><a href="https://www.youtube.com/watch?v=7TLWKEQF0fU&pp=ygUMZHVuYSBwYXJ0ZSAy"><img src="./imagens/filmes-em-cartaz/duna-2.webp" width=200px alt="Cartaz do filme Duna: Parte 2 com os dois personagens principais no centro, segurando uma espada, e com um sol ao fundo.">
+                <li><a href="https://www.youtube.com/watch?v=7TLWKEQF0fU&pp=ygUMZHVuYSBwYXJ0ZSAy"><img src="./imagens/filmes-em-cartaz/duna-2.webp" width=200px alt="Cartaz do filme Duna: Parte 2">
                 <h4>Duna: Parte 2</h4></a></li>
                 <br>
-                <li><a href="https://www.youtube.com/watch?v=Zw3QtH64Fxc"><img src="./imagens/filmes-em-cartaz/a-cantiga-dos-pássaros-e-das-serpentes.jpg" width=200px alt="Cartaz do filme Jogos Vorazes: A Cantiga dos Pássaros e das Serpentes com a imagem das duas personagens principais de costas uma para a outra, com adornos dourados em volta, incluindo pássaros, serpentes e plantas.">
+                <li><a href="https://www.youtube.com/watch?v=Zw3QtH64Fxc"><img src="./imagens/filmes-em-cartaz/a-cantiga-dos-pássaros-e-das-serpentes.jpg" width=200px alt="Cartaz do filme Jogos Vorazes: A Cantiga dos Pássaros e das Serpentes">
                 <h4>Jogos Vorazes: A Cantiga dos Pássaros e das Serpentes</h4></a></li>
-            </ul>
+                <li><button type="button"><img src="./imagens/seta-direita.png" alt="Imagem de seta para direita"></button></li>
+            </ul></div>
+            <div class="espacamento-final">
+            <br>
+            </div>
         </section>
     </main>
     <footer>
@@ -85,6 +95,7 @@
             <ul>
                 <h4>Gêneros</h4>
                 <li><a href="./filmes-acao.html">Ação</li></a>
+                <li>Animação</li>
                 <li>Aventura</li>
                 <li>Comédia</li>
                 <li>Drama</li>
@@ -97,10 +108,10 @@
         <section>
             <ul>
                 <h4>Redes sociais</h4>
-                <li><a href="https://www.instagram.com/"><img src="./imagens/ícones/instagram-icone.png" width=25px></a></li>
+                <div class="mediaicons"><li><a href="https://www.instagram.com/"><img src="./imagens/ícones/instagram-icone.png" width=25px></a></li>
                 <li><a href="https://twitter.com/"><img src="./imagens/ícones/twitter-icone.png" width=25px></a></li>
                 <li><a href="https://www.facebook.com/"><img src="./imagens/ícones/facebook-icone.png" width=25px></a></li>
-            </ul>
+            </ul></div>
         </section>
       </footer>
 </body>

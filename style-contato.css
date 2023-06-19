@@ -1,0 +1,143 @@
+* {
+    font-family: 'Wix Madefor Display', sans-serif;font-family: 'Wix Madefor Display', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-image: url(./imagens/bg-img3.png);
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    padding-left: 15px;
+}
+
+header img {
+    padding: 5px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+	height: 100%; 
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+	height: 100%;
+    margin: 0;
+}
+
+nav ul li {
+    color: black;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+.espacamento-inicio {
+    padding-top: 60px;
+}
+
+main section {
+    color: white;
+    background-color: rgb(34 34 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;
+    max-width: 600px;
+    margin: 0;
+    box-shadow: 0px 0px 10px rgb(26, 26, 26);
+}
+
+main section h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 12px;
+    min-width: 600px;
+    max-width: 600px;
+    color: white;
+    border-bottom: solid rgb(255, 217, 49) 3px;
+}
+
+main section form {
+    color: rgb(255, 217, 49);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+main section label {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+main section button {
+    outline: none;
+    padding: 8px;
+    font-size: large;
+    background-color: rgb(255, 217, 49);
+    border: 0;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.espacamento-final {
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: rgb(163, 163, 163);
+    display: flex;
+    justify-content: center;
+}
+
+footer section ul li {
+    color: black;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+footer section ul {
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+footer section ul h4 {
+    margin-bottom: 8px;
+}
+
+footer section ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.mediaicons {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
