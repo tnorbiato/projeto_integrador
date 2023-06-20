@@ -94,11 +94,13 @@ main section ul li button img {
 
 main section h1 {
     color: white;
+    text-shadow: 3px 3px 3px rgb(29, 29, 29);
     margin-top: 160px;
 }
 
 main section h2 {
     color: white;
+    text-shadow: 3px 3px 3px rgb(29, 29, 29);
     padding-top: 15px;
 }
 

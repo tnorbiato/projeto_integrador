@@ -25,6 +25,7 @@ main section h1 {
     min-width: 6000px;
     max-width: 6000px;
     margin-bottom: 12px;
+    text-shadow: 3px 3px 3px rgb(29, 29, 29);
 }
 
 main section {
