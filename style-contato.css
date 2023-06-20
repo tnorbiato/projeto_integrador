@@ -4,11 +4,14 @@
 
 body {
     margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 main {
-    background-image: url(./imagens/bg-img3.png);
+    background-image:url(./imagens/bg-img3.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -51,8 +54,9 @@ nav ul a {
     text-decoration: none;
 }
 
-.espacamento-inicio {
-    padding-top: 60px;
+main {
+    display: flex;
+    justify-content: center;
 }
 
 main section {
@@ -61,17 +65,18 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 600px;
-    max-width: 600px;
+    min-width: 650px;
+    max-width: 650px;
     margin: 0;
-    box-shadow: 0px 0px 10px rgb(26, 26, 26);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin: 200px;
 }
 
 main section h1 {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-top: 12px;
+    padding-top: 50px;
     min-width: 600px;
     max-width: 600px;
     color: white;
@@ -87,12 +92,17 @@ main section form {
     max-width: 500px;
 }
 
+textarea {
+    resize: none;
+  }
+
 main section label {
     margin: 0;
     padding-bottom: 8px;
 }
 
 main section button {
+    display: flex;
     outline: none;
     padding: 8px;
     font-size: large;
@@ -100,11 +110,15 @@ main section button {
     border: 0;
     font-weight: bolder;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    max-width: 200px;
+    min-width: 200px;
+    justify-content: center;
 }
 
-.espacamento-final {
-    padding-bottom: 40px;
+.btn-enviar {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
