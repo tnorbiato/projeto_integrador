@@ -116,6 +116,14 @@ main section button {
     justify-content: center;
 }
 
+button:hover{
+    color: white;
+    background-color: rgb(105, 105, 105);
+    border: 0;
+    font-weight: bolder;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
 .btn-enviar {
     display: flex;
     justify-content: center;
