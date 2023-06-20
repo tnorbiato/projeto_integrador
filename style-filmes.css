@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-    color: black;
+    color: rgb(26, 26, 26);
     display: flex;
     list-style-type: none;
     text-decoration: none;
@@ -129,7 +129,7 @@ footer {
 }
 
 footer section ul li {
-    color: black;
+    color: rgb(26, 26, 26);
     display: flex;
     list-style-type: none;
     text-decoration: none;
@@ -144,11 +144,12 @@ footer section ul {
 
 footer section ul h4 {
     margin-bottom: 8px;
+    color: rgb(26, 26, 26);
 }
 
 footer section ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(26, 26, 26);
 }
 
 .mediaicons {
