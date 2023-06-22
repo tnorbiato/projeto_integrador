@@ -64,6 +64,14 @@ nav ul a {
     text-shadow: 3px 3px 3px rgb(29, 29, 29);   
 }
 
+.titulo-genero {
+    color: rgb(255, 217, 49);
+    text-shadow: 3px 3px 3px rgb(29, 29, 29);
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 30px;
+}
+
 .titulo h1 {
     display: flex;
     justify-content: center;
