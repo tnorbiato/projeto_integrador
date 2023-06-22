@@ -103,7 +103,6 @@ main section button {
     margin-bottom: 15px;
     text-align: justify;
     text-justify: inter-word;
-    margin-right: 20px;
 }
 
 .filme img {
@@ -124,6 +123,39 @@ main section button {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    padding-right: 15px;
+}
+
+.descricao a {
+    text-decoration: none;
+    color: rgb(255, 217, 49);
+}
+
+.classificacao-streaming{
+    min-width:150px;
+    max-width:150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.classificacao-streaming p{
+    margin-bottom: 0px;
+}
+
+.classificacao-streaming img{
+    display: flex;
+    align-content: center;
+    min-width:20px;
+    min-height:20px;
+    max-width:40px;
+    max-height:40px;
+    border-radius:10%;
+    overflow:hidden;
+    
 }
 
 .espacamento-final {
