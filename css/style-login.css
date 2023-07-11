@@ -58,20 +58,21 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 650px;
-    max-width: 650px;
+    min-width: 600px;
+    max-width: 600px;
     margin: 0;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-    margin: 100px;
+    margin: 200px;
 }
 
 main section h1 {
     display: flex;
     justify-content: center;
     margin: 0;
+    margin-bottom: 20px;
     padding-top: 50px;
-    min-width: 600px;
-    max-width: 600px;
+    min-width: 550px;
+    max-width: 550px;
     color: white;
     border-bottom: solid rgb(255, 217, 49) 3px;
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
@@ -82,19 +83,25 @@ main section form {
     display: flex;
     align-items: stretch;
     flex-direction: column;
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 400px;
+    max-width: 400px;
 }
 
-main section form div {
-    display: flex;
-    flex-direction: column;
+.manter-logado {
+    display: block;
+    color: white;
 }
 
+.link {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
 
-textarea {
-    resize: none;
-  }
+.link a {
+    text-decoration: none;
+    color: rgb(255, 217, 49);
+}
 
 main section label {
     margin: 0;
@@ -124,10 +131,11 @@ button:hover{
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
-#btn-enviar {
+#btn-login {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .span-required{
@@ -170,3 +178,4 @@ footer section ul a {
     align-items: center;
     padding: 0;
 }
+

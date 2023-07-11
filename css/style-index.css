@@ -1,8 +1,3 @@
-main {
-    background-image:url(/img/bg-img3.png);
-    background-size: cover;
-}
-
 header {
     background-color: rgb(163, 163, 163);
     display: flex;
@@ -41,6 +36,14 @@ nav ul li {
 
 nav ul a {
     text-decoration: none;
+}
+
+.login {
+    display: flex;
+    padding: 2px;
+    margin-right: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 main section button {
@@ -89,13 +92,13 @@ main section ul li button img {
 main section h1 {
     color: white;
     text-shadow: 3px 3px 3px rgb(29, 29, 29);
-    margin-top: 160px;
+    margin-top: 100px;
 }
 
 main section h2 {
     color: white;
     text-shadow: 3px 3px 3px rgb(29, 29, 29);
-    padding-top: 15px;
+    margin-top: 80px;
 }
 
 section button {
@@ -155,7 +158,7 @@ section div ul li a {
 }
 
 .espacamento-final {
-    padding-bottom: 140px;
+    padding-bottom: 100px;
 }
 
 footer {

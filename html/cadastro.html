@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style-padrao.css">
-    <link rel="stylesheet" href="/css/style-contato.css">
+    <link rel="stylesheet" href="/css/style-cadastro.css">
     <script src="/javascript/padrao.js" defer></script>
-    <title>Indicaí - Contate-nos</title>
+    <title>Indicaí - Cadastro</title>
 </head>
     <body>
         <header>
@@ -28,43 +28,34 @@
         <main>
             <div class="slider1"></div>
             <section>
-                <h1>Contate-nos</h1>
-                <p>Seja parceiro do Indicaí e conecte-se à milhões de amantes da sétima arte!</p>
-                    <form id="form">
-                        <div>
-                        <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" id="nome" class="inputs required" oninput="nameValidate()">
-                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-                        </div>
-                        <br>
-                        <div>
-                        <label for="empresa">Nome da empresa</label>
-                        <input type="text" name="empresa" id="empresa">
-                        </div>
-                        <br>
-                        <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="exemplo@exemplo.com.br" id="email" class="inputs required" oninput="emailValidate()">
-                        <span class="span-required">Digite um e-mail válido</span>
-                        </div>
-                        <br>
-                        <div>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" id="telefone" class="inputs required" oninput="telValidate()">
-                        <span class="span-required">Digite um telefone válido</span>
-                        </div>
-                        <br>
-                        <div>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="txtArea" rows="8" cols="70"></textarea>
-                        </div>
-                        <br>
-                        <div id="btn-enviar">
-                        <button type="submit">Enviar</button>
-                        </div>
+                <form id="form">
+                    <h1>Cadastro</h1> 
+                    <p> 
+                    <label for="user_cad">Usuário</label>
+                    <input id="user_cad" name="user_cad" type="text" class="inputs required" oninput="usuarioValidate()"/>
+                    <span class="span-required">Usuário deve ter no mínimo 5 caracteres</span>
+                    </p>
+                    <p> 
+                    <label for="email_cad">E-mail</label>
+                    <input id="email_cad" name="email_cad" type="email" class="inputs required" oninput="emailValidate()" placeholder="exemplo@exemplo.com.br"/>
+                    <span class="span-required">Digite um e-mail válido</span>
+                    </p> 
+                    <p> 
+                    <label for="senha_cad">Senha</label>
+                    <input id="senha_cad" name="senha_cad" type="password" class="inputs required" oninput="senhaValidate()"/>
+                    <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                    </p>
+                    <p> 
+                    <div id="btn-cadastrar"><button type="submit">Cadastrar</button>
+                    </div>
+                    </p>
+                    <p class="link">
+                    Já tem conta?
+                    <a href="./login.html"> Ir para Login</a>
+                    </p>
                     </form>
-            </section>
-            <div class="slider2"></div>
+             </section>
+             <div class="slider2"></div>
         </main>
         <footer>
             <section>
@@ -104,20 +95,19 @@
         const campos = document.querySelectorAll('.required');
         const spans = document.querySelectorAll('.span-required');
         const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        const telRegex = /([\(])?([0-9]{2})(.)([0-9]{5})([\-])?([0-9]{4})/;
-        const btnEnviar = document.getElementById('btn-enviar');
-        const email = document.getElementById('email');
-        const nome = document.getElementById('nome');
-        const telefone = document.getElementById('telefone');
+        const btnCadastrar = document.getElementById('btn-cadastrar');
+        const email = document.getElementById('email_cad');
+        const usuario = document.getElementById('user_cad');
+        const senha = document.getElementById('senha_cad');
 
-        btnEnviar.addEventListener('click', enviarForm);
+        btnCadastrar.addEventListener('click', enviarForm);
 
         function enviarForm(){
-            if(nome.value == '' || email.value == '' || telefone.value == ''){
+            if(email.value == '' || usuario.value == '' || senha.value == ''){
                 event.preventDefault();
-                nameValidate();
+                usuarioValidate();
                 emailValidate();
-                telValidate();
+                senhaValidate();
             }
             else
             {
@@ -137,8 +127,8 @@
             spans[index].style.color = '';
         };
 
-        function nameValidate(){
-            if(campos[0].value.length < 3)
+        function usuarioValidate(){
+            if(campos[0].value.length < 5)
             {
                 setError(0);
             }
@@ -159,8 +149,8 @@
             }
         };
 
-        function telValidate(){
-            if(!telRegex.test(campos[2].value))
+        function senhaValidate(){
+            if(campos[2].value.length < 8)
             {
                 setError(2);
             }

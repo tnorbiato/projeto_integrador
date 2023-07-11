@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style-padrao.css">
-    <link rel="stylesheet" href="/css/style-contato.css">
+    <link rel="stylesheet" href="/css/style-login.css">
     <script src="/javascript/padrao.js" defer></script>
-    <title>Indicaí - Contate-nos</title>
+    <title>Indicaí - Login</title>
 </head>
     <body>
         <header>
@@ -28,39 +28,23 @@
         <main>
             <div class="slider1"></div>
             <section>
-                <h1>Contate-nos</h1>
-                <p>Seja parceiro do Indicaí e conecte-se à milhões de amantes da sétima arte!</p>
+                <h1>Login</h1>
                     <form id="form">
-                        <div>
-                        <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" id="nome" class="inputs required" oninput="nameValidate()">
-                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-                        </div>
-                        <br>
-                        <div>
-                        <label for="empresa">Nome da empresa</label>
-                        <input type="text" name="empresa" id="empresa">
-                        </div>
-                        <br>
-                        <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="exemplo@exemplo.com.br" id="email" class="inputs required" oninput="emailValidate()">
+                        <input type="email" name="email" placeholder="E-mail" id="email" class="inputs required" oninput="emailValidate()">
                         <span class="span-required">Digite um e-mail válido</span>
+                        <br>
+                        <input type="password" name="senha" placeholder="Senha" id="senha" class="inputs required" oninput="senhaValidate()">
+                        <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                        <br>
+                        <div class="manter-logado">
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                        <label for="manterlogado">Manter-me logado</label>
                         </div>
                         <br>
-                        <div>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" id="telefone" class="inputs required" oninput="telValidate()">
-                        <span class="span-required">Digite um telefone válido</span>
-                        </div>
-                        <br>
-                        <div>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="txtArea" rows="8" cols="70"></textarea>
-                        </div>
-                        <br>
-                        <div id="btn-enviar">
-                        <button type="submit">Enviar</button>
+                        <p class="link">Ainda não tem conta?
+                        <a href="./cadastro.html">Cadastre-se</a>
+                        </p>
+                        <div id="btn-login"><button type="submit">Login</button>
                         </div>
                     </form>
             </section>
@@ -104,20 +88,17 @@
         const campos = document.querySelectorAll('.required');
         const spans = document.querySelectorAll('.span-required');
         const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        const telRegex = /([\(])?([0-9]{2})(.)([0-9]{5})([\-])?([0-9]{4})/;
-        const btnEnviar = document.getElementById('btn-enviar');
+        const btnLogin = document.getElementById('btn-login');
         const email = document.getElementById('email');
-        const nome = document.getElementById('nome');
-        const telefone = document.getElementById('telefone');
+        const senha = document.getElementById('senha');
 
-        btnEnviar.addEventListener('click', enviarForm);
+        btnLogin.addEventListener('click', enviarForm);
 
         function enviarForm(){
-            if(nome.value == '' || email.value == '' || telefone.value == ''){
+            if(email.value == '' || senha.value == ''){
                 event.preventDefault();
-                nameValidate();
                 emailValidate();
-                telValidate();
+                senhaValidate();
             }
             else
             {
@@ -137,8 +118,8 @@
             spans[index].style.color = '';
         };
 
-        function nameValidate(){
-            if(campos[0].value.length < 3)
+        function emailValidate(){
+            if(!emailRegex.test(campos[0].value))
             {
                 setError(0);
             }
@@ -148,25 +129,14 @@
             }
         };
 
-        function emailValidate(){
-            if(!emailRegex.test(campos[1].value))
+        function senhaValidate(){
+            if(campos[1].value.length < 8)
             {
                 setError(1);
             }
             else
             {
                 removeError(1);
-            }
-        };
-
-        function telValidate(){
-            if(!telRegex.test(campos[2].value))
-            {
-                setError(2);
-            }
-            else
-            {
-                removeError(2);
             }
         }
     </script>

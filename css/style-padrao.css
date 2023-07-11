@@ -7,3 +7,34 @@ body {
     padding: 0;
     border: 0;
 }
+
+main {
+    background-color: #494949;
+}
+
+.slider {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(191px * 34);
+    animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-191px * 17));
+    }
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+}
