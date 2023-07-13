@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(34 34 34);
     display: flex;
     justify-content: space-between;
 }
@@ -26,7 +26,7 @@ nav ul {
 }
 
 nav ul li {
-    color: rgb(26, 26, 26);
+    color:  rgb(195 195 195);
     display: flex;
     list-style-type: none;
     text-decoration: none;
