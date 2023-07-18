@@ -35,6 +35,8 @@ main section img {
     border: solid rgb(255, 217, 49) 3px;
     margin-left: 12px;
     margin-right: 12px;
+    border-radius: 5px;
+    width: 170px;
 }
 
 .sobre-nos {
@@ -60,6 +62,7 @@ main section img {
    padding-top: 20px;
    padding-bottom: 20px;
    margin: 20px;
+   border-radius: 5px;
 }
 
 .integrante:hover {
@@ -77,54 +80,6 @@ main section img {
 
 .integrante-descricao p {
     margin: 0;
-}
-
-header {
-    background-color:rgb(34 34 34);
-    display: flex;
-    justify-content: space-between;
-}
-
-header a {
-    padding-left: 15px;
-}
-
-header img {
-    padding: 5px;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-	height: 100%; 
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-	height: 100%;
-    margin: 0;
-}
-
-nav ul li {
-    color: rgb(195 195 195);
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 15px;
-    font-weight: bold;
-}
-
-nav ul a {
-    text-decoration: none;
-}
-
-.login {
-    display: flex;
-    padding: 2px;
-    margin-right: 15px;
-    text-decoration: underline;
-    font-weight: bolder;
 }
 
 .titulo {
@@ -168,28 +123,6 @@ main section button {
     border-bottom: solid rgb(255, 217, 49) 3px;
 }
 
-.filme p {
-    margin-top: 8px;
-    margin-bottom: 15px;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 20px;
-}
-
-.filme img {
-    display: flex;
-    align-content: center;
-    margin: 20px;
-    min-width:200px;
-    min-height:296px;
-    max-width:200px;
-    max-height:296px;
-}
-
-.filme h2 {
-    font-style: italic;
-}
-
 .descricao {
     display: flex;
     flex-direction: column;
@@ -198,40 +131,4 @@ main section button {
 
 .espacamento-final {
     padding-bottom: 100px;
-}
-
-footer {
-    background-color: rgb(163, 163, 163);
-    display: flex;
-    justify-content: center;
-}
-
-footer section ul li {
-    color: rgb(26, 26, 26);
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 8px;
-}
-
-footer section ul {
-    padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-footer section ul h4 {
-    margin-bottom: 8px;
-    color: rgb(26, 26, 26);
-}
-
-footer section ul a {
-    text-decoration: none;
-    color: rgb(26, 26, 26);
-}
-
-.mediaicons {
-    display: flex;
-    align-items: center;
-    padding: 0;
 }

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style-padrao.css">
     <link rel="stylesheet" href="/css/style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="/javascript/login.js" defer></script>
     <script src="/javascript/padrao.js" defer></script>
     <title>Indicaí - Login</title>
@@ -17,13 +18,14 @@
         <header>
             <a href="/index.html"><img src="/img/logo.png" width=100px alt="Logo do site Indicaí"></a>
             <nav>
-                <ul>
+                <ul><div class="nav">
                     <a href="/index.html"><li>Início</li></a>
-                    <a href="./sobre-nos.html"><li>Sobre nós</li></a>
-                    <a href="./contato.html"><li>Contato</li></a>
+                    <a href="/html/sobre-nos.html"><li>Sobre nós</li></a>
+                    <a href="/html/contato.html"><li>Contato</li></a>
                     <div class="login">
-                        <a href="/html/login.html"><li>Fazer login</li></a></div>
-                    </div></ul>
+                        <a href="/html/login.html"><li><i class="fa-solid fa-user"></i>Fazer login</li></a>
+                    </div>
+                </div></ul>
             </nav>
         </header>
         <main>
@@ -31,10 +33,10 @@
             <section>
                 <h1>Login</h1>
                     <form id="form">
-                        <input type="email" name="email" placeholder="E-mail" id="email" class="inputs required" oninput="emailValidate()">
+                        <input type="email" name="email" placeholder="E-mail" id="email" class="inputs required" autocomplete="email" oninput="emailValidate()">
                         <span class="span-required">Digite um e-mail válido</span>
                         <br>
-                        <input type="password" name="senha" placeholder="Senha" id="senha" class="inputs required" oninput="senhaValidate()">
+                        <input type="password" name="senha" placeholder="Senha" id="senha" class="inputs required" autocomplete="current-password" oninput="senhaValidate()">
                         <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                         <br>
                         <div class="manter-logado">
@@ -58,6 +60,7 @@
                     <a href="/index.html"><li>Início</li></a>
                     <a href="./sobre-nos.html"><li>Sobre nós</li></a>
                     <a href="./contato.html"><li>Contato</li></a>
+                    <a href="./login.html"><li>Fazer login</li></a>
                 </ul>
             </section>
             <section>

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style-padrao.css">
     <link rel="stylesheet" href="/css/style-contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="/javascript/contato.js" defer></script>
     <script src="/javascript/padrao.js" defer></script>
     <title>Indicaí - Contate-nos</title>
@@ -17,13 +18,14 @@
         <header>
             <a href="/index.html"><img src="/img/logo.png" width=100px alt="Logo do site Indicaí"></a>
             <nav>
-                <ul>
+                <ul><div class="nav">
                     <a href="/index.html"><li>Início</li></a>
-                    <a href="./sobre-nos.html"><li>Sobre nós</li></a>
-                    <a href="./contato.html"><li>Contato</li></a>
+                    <a href="/html/sobre-nos.html"><li>Sobre nós</li></a>
+                    <a href="/html/contato.html"><li>Contato</li></a>
                     <div class="login">
-                        <a href="/html/login.html"><li>Fazer login</li></a></div>
-                    </div></ul>
+                        <a href="/html/login.html"><li><i class="fa-solid fa-user"></i>Fazer login</li></a>
+                    </div>
+                </div></ul>
             </nav>
         </header>
         <main>
@@ -34,7 +36,7 @@
                     <form id="form">
                         <div>
                         <label for="nome">Nome completo</label>
-                        <input type="text" name="nome" id="nome" class="inputs required" oninput="nameValidate()">
+                        <input type="text" name="nome" id="nome" class="inputs required" autocomplete="cc-name" oninput="nameValidate()">
                         <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <br>
@@ -45,13 +47,13 @@
                         <br>
                         <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="exemplo@exemplo.com.br" id="email" class="inputs required" oninput="emailValidate()">
+                        <input type="email" name="email" placeholder="exemplo@exemplo.com.br" id="email" class="inputs required" autocomplete="email" oninput="emailValidate()">
                         <span class="span-required">Digite um e-mail válido</span>
                         </div>
                         <br>
                         <div>
                         <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" id="telefone" class="inputs required" oninput="telValidate()">
+                        <input type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx" id="telefone" class="inputs required" autocomplete="tel-area-code" oninput="telValidate()">
                         <span class="span-required">Digite um telefone válido</span>
                         </div>
                         <br>
@@ -74,6 +76,7 @@
                     <a href="/index.html"><li>Início</li></a>
                     <a href="./sobre-nos.html"><li>Sobre nós</li></a>
                     <a href="./contato.html"><li>Contato</li></a>
+                    <a href="./login.html"><li>Fazer login</li></a>
                 </ul>
             </section>
             <section>

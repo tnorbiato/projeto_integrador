@@ -1,49 +1,5 @@
-header {
-    background-color: rgb(34 34 34);
-    display: flex;
-    justify-content: space-between;
-}
-
-header a {
-    padding-left: 15px;
-}
-
-header img {
-    padding: 5px;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-	height: 100%; 
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-	height: 100%;
-    margin: 0;
-}
-
-nav ul li {
-    color: rgb(195 195 195);
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 15px;
-    font-weight: bold;
-}
-
-nav ul a {
-    text-decoration: none;
-}
-
-.login {
-    display: flex;
-    padding: 2px;
-    margin-right: 15px;
-    text-decoration: underline;
-    font-weight: bolder;
+#buttons-generos {
+    margin-bottom: 100px;
 }
 
 main section button {
@@ -54,6 +10,7 @@ main section button {
     border: 0;
     font-weight: bolder;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 button:hover{
@@ -97,8 +54,7 @@ main section h1 {
 
 main section h2 {
     color: white;
-    text-shadow: 3px 3px 3px rgb(29, 29, 29);
-    margin-top: 80px;
+    text-shadow: 0 0 5px rgb(133 133 133);
 }
 
 section button {
@@ -157,42 +113,168 @@ section div ul li a {
     text-decoration: none;
 }
 
-.espacamento-final {
-    padding-bottom: 100px;
-}
-
-footer {
-    background-color: rgb(163, 163, 163);
+#sliderCartaz, #sliderBreve{
+    background-color: rgb(34 34 34);
     display: flex;
     justify-content: center;
-}
-
-footer section ul li {
-    color: rgb(26, 26, 26);
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    padding-right: 8px;
-}
-
-footer section ul {
-    padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-footer section ul h4 {
-    margin-bottom: 8px;
-    color: rgb(26, 26, 26);
-}
-
-footer section ul a {
-    text-decoration: none;
-    color: rgb(26, 26, 26);
-}
-
-.mediaicons {
-    display: flex;
     align-items: center;
+    margin: 0;
+    border-top: solid rgb(255, 217, 49) 5px;
+    border-bottom: solid rgb(255, 217, 49) 5px;
     padding: 0;
+    margin-bottom: 80px;
+}
+  
+.container {
+    width: 1600px;
+    margin: auto;
+}
+  
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+  
+.controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+#tns1-ow.tns-outer {
+    margin-bottom: 40px;
+}
+
+#tns2-mw.tns-ovh {
+    margin-bottom: 40px;
+}
+
+#controlsCartaz i, #controlsBreve i{
+    color: white;
+    font-size: 1rem;
+}
+  
+.prevCartaz, .nextCartaz, .prevBreve, .nextBreve {
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-color: transparent;
+    outline: none;
+    transition: 0.7s ease-it-out;
+    border: 3px solid white;
+    background-color: transparent;
+    box-shadow: 0 0 5px #bbb;
+    border-radius: 50px;
+}
+  
+.prevCartaz:hover, .nextCartaz:hover, .prevBreve:hover, .nextBreve:hover {
+    border: 3px solid gray;
+}
+  
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+    max-width: 220px;
+}
+  
+.slide-img {
+    min-width: 200px;
+    min-height: 296px;
+    max-width: 200px;
+    max-height: 296px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+  
+.slide-img:hover {
+    box-shadow: 0 0 0 200px black inset;
+}
+  
+.slide-img a {
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+}
+  
+.slide-img:hover a {
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.imgCartaz-1 {
+    background-image: url("/img/filmes-index/the-flash.webp");
+}
+  
+.imgCartaz-2 {
+    background-image: url("/img/filmes-index/A-Pequena-Sereia.webp");
+}
+  
+.imgCartaz-3 {
+    background-image: url("/img/filmes-index/Homem-Aranha_-_Atraves_do_Aranhaverso.jpg");
+}
+  
+.imgCartaz-4 {
+    background-image: url("/img/filmes-index/boogeyman-seu-medo-e-real.jpg");
+}
+  
+.imgCartaz-5 {
+    background-image: url("/img/filmes-index/Transformers-O-Despertar-das-Feras.jpg");
+}
+
+.imgCartaz-6 {
+    background-image: url("/img/filmes-index/Transformers-O-Despertar-das-Feras.jpg");
+}
+
+.imgBreve-1 {
+    background-image: url("/img/filmes-index/barbie.jpeg");
+}
+  
+.imgBreve-2 {
+    background-image: url("/img/filmes-index/oppenheimer-novo-poster.jpg");
+}
+  
+.imgBreve-3 {
+    background-image: url("/img/filmes-index/LOUCAS-EM-APUROS.webp");
+}
+  
+.imgBreve-4 {
+    background-image: url("/img/filmes-index/duna-2.webp");
+}
+  
+.imgBreve-5 {
+    background-image: url("/img/filmes-index/a-cantiga-dos-pássaros-e-das-serpentes.jpg");
+}
+
+.imgBreve-6 {
+    background-image: url("/img/filmes-index/a-freira-2-poster-nacional.jpg");
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+}
+  
+@media(max-width:1600px){
+    .container{
+      width: 100%;
+    }
+}
+
+.espacamento-final {
+    padding-bottom: 100px;
 }
