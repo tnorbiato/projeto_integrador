@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/style-filmes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="/javascript/padrao.js" defer></script>
+  <script src="/javascript/filmes.js" defer></script>
   <title>Indicaí - Filmes de Ação</title>
 </head>
 <body>
@@ -31,86 +32,204 @@
     <div class="titulo"><h1>Filmes de <span class="titulo-genero"> AÇÃO </span> indicados</h1></div>
       <div class="filme">
         <img src="/img/filmes-acao/a-mulher-rei.jpg" alt="Cartaz do filme A Mulher Rei">
-        <div class="descricao">  
+        <div class="descricao">
+          <div class="descricao1">
           <h2>A Mulher Rei</h2>
           <p>Ano: 2022</p>
           <p>Duração: 2h 15min</p>
           <p>Diretor(a): Gina Prince-Bythewood</p>
           <p>Gênero: <a href="./filmes-drama.html">Drama</a> / <a href="./filmes-acao.html">Ação</a></p>
           <p>Sinopse: A Mulher Rei acompanha Nanisca (Viola Davis) que foi uma comandante do exército do Reino de Daomé, um dos locais mais poderosos da África nos séculos XVII e XIX. Durante o período, o grupo militar era composto apenas por mulheres que, juntas, combateram os colonizadores franceses, tribos rivais e todos aqueles que tentaram escravizar seu povo e destruir suas terras. Conhecidas como Agojie, o grupo foi criado por conta de sua população masculina enfrentar altas baixas na violência e guerra cada vez mais frequentes com os estados vizinhos da África Ocidental, o que levou Dahomey a ser forçado a dar anualmente escravos do sexo masculino, particularmente ao Império Oyo, que usou isso para troca de mercadorias como parte do crescente fenômeno do comércio de escravos na África Ocidental durante a Era dos Descobrimentos, o que fez com que mulheres fossem alistadas para o combate.</p>
-        </div>
-      <div class="classificacao-streaming">
-        <p>Classificação:</p>
+          <div class="nota">
+          <div class="nota1">
+          <h4>Nota do Indicaí:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota2">
+          <h4>Nota da Imprensa:</h4>
+          <img src="/img/ícones/estrela3.svg"></div>
+          <div class="nota3">
+          <h4>Nota dos Usuários:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota4">
+          <h4>Avalie:</h4>
+          <span class="star-rating">
+            <input type="radio" name="rating" value="1"><i></i>
+            <input type="radio" name="rating" value="2"><i></i>
+            <input type="radio" name="rating" value="3"><i></i>
+            <input type="radio" name="rating" value="4"><i></i>
+            <input type="radio" name="rating" value="5"><i></i>
+          </span></div>
+          </div></div> 
+          <div class="descricao2">
+            <p>Minha lista</p>
+            <button onclick="toggleClass1()" id="btnList1" class="btnAdd" type="submit"></button>
+          <div class="classificacao-streaming">
+          <p>Classificação</p>
         <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
-        <p>Disponível em:</p>
+        <p>Disponível em</p>
         <a href="https://play.hbomax.com/feature/urn:hbo:feature:GZFFX1gMjTLGYsAEAAAj8?source=googleHBOMAX&action=open"><img src="/img/ícones/hbo-max.webp" alt="Imagem da logo do aplicativo Hbo Max"></a>
-      </div></div>
+      </div></div></div>
       </div>
         <div class="filme">
         <img src="/img/filmes-acao/velozes-e-furiosos-10.jpg" alt="Cartaz do filme Velozes e Furiosos 10">
-        <div class="descricao"> 
+        <div class="descricao">
+          <div class="descricao1"> 
           <h2>Velozes & Furiosos X</h2>
           <p>Ano: 2023</p>
           <p>Duração: 2h 21min</p>
           <p>Diretor(a): Louis Leterrier</p>
           <p>Gênero: <a href="./filmes-acao.html">Ação</a></p>
           <p>Sinopse: No décimo filme da série Velozes & Furiosos e último da nova trilogia (Velozes 8, 9 e 10), ao longo de muitas missões e contra probabilidades que pareciam impossíveis, Dom Toretto (Vin Diesel) e sua família foram mais espertos e superaram todos os inimigos em seu caminho. Agora, eles devem desafiar o adversário mais letal que já enfrentaram. Alimentada pela vingança, uma ameaça terrível emerge das sombras do passado na forma de Dante (Jason Momoa), para destruir o mundo de Toretto e destruir tudo - e todos - que ele ama. Ele então, comandando novamente a equipe de corredores mais conhecida do mundo, encara mais uma difícil missão sobre quatro rodas.</p>
-        </div>
-        <div class="classificacao-streaming">
-          <p>Classificação:</p>
+          <div class="nota">
+            <div class="nota1">
+            <h4>Nota do Indicaí:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota2">
+            <h4>Nota da Imprensa:</h4>
+            <img src="/img/ícones/estrela3.svg"></div>
+            <div class="nota3">
+            <h4>Nota dos Usuários:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota4">
+            <h4>Avalie:</h4>
+            <span class="star-rating">
+              <input type="radio" name="rating" value="1"><i></i>
+              <input type="radio" name="rating" value="2"><i></i>
+              <input type="radio" name="rating" value="3"><i></i>
+              <input type="radio" name="rating" value="4"><i></i>
+              <input type="radio" name="rating" value="5"><i></i>
+            </span></div>
+            </div></div> 
+            <div class="descricao2">
+              <p>Minha lista</p>
+              <button onclick="toggleClass2()" id="btnList2" class="btnAdd" type="submit"></button>
+            <div class="classificacao-streaming">
+            <p>Classificação</p>
           <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
-          <p>Disponível em:</p>
+          <p>Disponível em</p>
           <a href="https://www.google.com/search?q=hor%C3%A1rios+de+exibi%C3%A7%C3%A3o+de+velozes+e+furiosos+10&newwindow=1&sxsrf=APwXEddXV3w7PvhoOMY-Ni8piZ7PbHuK2g%3A1687470416453&ei=UMGUZJ-gG8LA5OUPqLey-AY&ved=2ahUKEwjAkp7J7df_AhX4BrkGHeFEBCIQn7EFKAB6BQi3ARAB&uact=5&oq=Velozes+%26+Furiosos+X&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQsQIQJzIKCC4QsQMQgAQQCjIHCAAQgAQQCjILCAAQigUQsQMQgwEyDQgAEIAEELEDEIMBEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyGAguELEDEIAEEAoQlwUQ3AQQ3gQQ4AQYAUoECEEYAFAAWLMIYJQMaAFwAXgAgAG3AYgBtwGSAQMwLjGYAQCgAQKgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp&stick=H4sIAAAAAAAAAOMwe8RozS3w8sc9YSmjSWtOXmPU4eLzzS_LTA3OyC8vycxNLRaS4mIFiwgJSvFz8eqn6xsaZiSlF1qUZxXzLGI1yMgvOrywKDO_WCElVSG1IjMp8_Dyw4vzQbyy1Jz8qtRihVSFtFKQCqAaQwMAL_z-XnMAAAA&ictx=1"><img src="/img/ícones/cinema.png" alt="Imagem de um bilhete escrito cinema"></a>
-        </div></div> 
+        </div></div></div>
+      </div>
           <div class="filme">
             <img src="/img/filmes-acao/top-gun.jpg" alt="Cartaz do filme Top Gun: Maverick">
-            <div class="descricao">   
+            <div class="descricao">
+              <div class="descricao1">    
               <h2>Top Gun: Maverick</h2>
               <p>Ano: 2022</p>
               <p>Duração: 2h 11min</p>
               <p>Diretor(a): Joseph Kosinski</p>
               <p>Gênero: <a href="./filmes-acao.html">Ação</a></p>
               <p>Sinopse: Na sequência de Top Gun: Ases Indomáveis, acompanhamos a história de Pete “Maverick” Mitchell (Tom Cruise), um piloto à moda antiga da Marinha que coleciona muitas condecorações, medalhas de combate e grande reconhecimento pela quantidade de aviões inimigos abatidos nos últimos 30 anos. Entretanto, nada disso foi suficiente para sua carreira decolar, visto que ele deixou de ser um capitão e tornou-se um instrutor. A explicação para esse declínio é simples: Ele continua sendo o mesmo piloto rebelde de sempre, que não hesita em romper os limites e desafiar a morte. Nesta nova aventura, Maverick precisa provar que o fator humano ainda é fundamental no mundo contemporâneo das guerras tecnológicas.</p>
-            </div>
-            <div class="classificacao-streaming">
-              <p>Classificação:</p>
+              <div class="nota">
+                <div class="nota1">
+                <h4>Nota do Indicaí:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota2">
+                <h4>Nota da Imprensa:</h4>
+                <img src="/img/ícones/estrela3.svg"></div>
+                <div class="nota3">
+                <h4>Nota dos Usuários:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota4">
+                <h4>Avalie:</h4>
+                <span class="star-rating">
+                  <input type="radio" name="rating" value="1"><i></i>
+                  <input type="radio" name="rating" value="2"><i></i>
+                  <input type="radio" name="rating" value="3"><i></i>
+                  <input type="radio" name="rating" value="4"><i></i>
+                  <input type="radio" name="rating" value="5"><i></i>
+                </span></div>
+                </div></div> 
+                <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass3()" id="btnList3" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                <p>Classificação</p>
               <img src="/img/ícones/12-anos.png" alt="Imagem de classificação indicativa de 12 anos">
-              <p>Disponível em:</p>
+              <p>Disponível em</p>
               <a href="https://www.paramountplus.com/movies/top-gun-maverick/8C_NjtIvFPgsSx_HqD701il_ajqdqDVx?searchReferral=desktop-web&source=google-organic&ftag=IPP-23-10ahb6g"><img src="/img/ícones/paramount-plus.webp" alt="Imagem da logo do aplicativo Paramount Plus"></a>
-            </div></div>
+            </div></div></div>
+          </div>
             <div class="filme">
               <img src="/img/filmes-acao/lucy.jpg" alt="Cartaz do filme Lucy">
-              <div class="descricao">  
+              <div class="descricao">
+                <div class="descricao1">     
                 <h2>Lucy</h2>
                 <p>Ano: 2014</p>
                 <p>Duração: 1h 29min</p>
                 <p>Diretor(a): Luc Besson</p>
                 <p>Gênero: <a href="./filmes-ficcao-cientifica.html">Ficção Científica</a> / <a href="./filmes-acao.html">Ação</a></p>
                 <p>Sinopse: Quando a inocente jovem Lucy (Scarlett Johansson) aceita transportar drogas dentro do seu estômago, ela não conhece muito bem os riscos que corre. Por acaso, ela acaba absorvendo as drogas, e um efeito inesperado acontece: Lucy ganha poderes sobre-humanos, incluindo a telecinesia, a ausência de dor e a capacidade de adquirir conhecimento instantaneamente.</p>
-              </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div></div> 
+                  <div class="descricao2">
+                    <p>Minha lista</p>
+                    <button onclick="toggleClass4()" id="btnList4" class="btnAdd" type="submit"></button>
+                  <div class="classificacao-streaming">
+                  <p>Classificação</p>
                 <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-                <p>Disponível em:</p>
+                <p>Disponível em</p>
                 <a href="https://www.starplus.com/video/289a4216-f836-47a2-b88f-c48776047cb7?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-              </div></div>
+              </div></div></div>
             </div>
             <div class="filme">
               <img src="/img/filmes-acao/mad-max.webp" alt="Cartaz do filme Mad Max: Estrada da Fúria">
-              <div class="descricao"> 
+              <div class="descricao">
+                <div class="descricao1">   
                 <h2>Mad Max: Estrada da Fúria </h2>
                 <p>Ano: 2015</p>
                 <p>Duração: 2h 00min</p>
                 <p>Diretor(a): George Miller</p>
                 <p>Gênero: <a href="./filmes-acao.html">Ação</a> / <a href="./filmes-ficcao-cientifica.html">Ficção Científica</a></p>
                 <p>Sinopse: Após ser capturado por Immortan Joe, um guerreiro das estradas chamado Max (Tom Hardy) se vê no meio de uma guerra mortal, iniciada pela Imperatriz Furiosa (Charlize Theron) na tentativa se salvar um grupo de garotas. Também tentanto fugir, Max aceita ajudar Furiosa em sua luta contra Joe e se vê dividido entre mais uma vez seguir sozinho seu caminho ou ficar com o grupo.</p>
-              </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div></div> 
+                  <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass5()" id="btnList5" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                <p>Classificação</p>
                 <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-                <p>Disponível em:</p>
+                <p>Disponível em</p>
                 <a href="https://www.primevideo.com/dp/amzn1.dv.gti.55901cd8-ab26-47ef-9a91-a474cd7696cd?autoplay=0&ref_=atv_cf_strg_wb"><img src="/img/ícones/primevideo.webp" alt="Imagem da logo do aplicativo Prime Video"></a>
-              </div></div>
+              </div></div></div>
+            </div>
               <div class="espacamento-final">
                 <br>
               </div>
