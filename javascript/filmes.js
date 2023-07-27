@@ -22,4 +22,3 @@ function toggleClass5(){
     let btnList = document.getElementById('btnList5');
     btnList.classList.toggle('btnAdded');
 };
-

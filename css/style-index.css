@@ -4,21 +4,13 @@
 
 main section button {
     color: white;
-    outline: none;
-    padding: 15px;
-    font-size: large;
-    background-color: rgb(255, 217, 49);
-    border: 0;
-    font-weight: bolder;
-    border-radius: 5px;
-}
-
-button:hover{
-    color: white;
     background-color: rgb(41, 41, 41);
     border: 0;
     font-weight: bolder;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-size: large;
+    padding: 15px;
+    outline: none;
+    box-shadow: inset 3px 3px 160px 0 #1a1a1a82;
 }
 
 main section ul li button {
@@ -41,13 +33,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-acao:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-animacao {
@@ -59,13 +49,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-animacao:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-aventura {
@@ -77,13 +65,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-aventura:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-comedia {
@@ -95,13 +81,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-comedia:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-drama {
@@ -113,13 +97,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-drama:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-ficcao-cientifica {
@@ -131,13 +113,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-ficcao-cientifica:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-romance {
@@ -149,13 +129,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-romance:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-suspense {
@@ -167,13 +145,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-suspense:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 #btn-terror {
@@ -185,13 +161,11 @@ main section ul li button {
     background-size: 400px;
     background-position: center;
     border-radius: 160px;
-    color: transparent;
     cursor: pointer;
 }
 
 #btn-terror:hover {
-    box-shadow: inset 3px 3px 160px 0 #1a1a1a;
-    color: white;
+    box-shadow: none;
 }
 
 main section ul li button img {
