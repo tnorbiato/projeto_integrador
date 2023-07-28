@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/style-filmes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="/javascript/padrao.js" defer></script>
+  <script src="/javascript/filmes.js" defer></script>
   <title>Indicaí - Filmes de Suspense</title>
 </head>
 <body>
@@ -30,86 +31,227 @@
     <div class="slider1"></div>
     <div class="titulo"><h1>Filmes de <span class="titulo-genero"> SUSPENSE </span> indicados</h1></div>
       <div class="filme">
-        <img src="/img/filmes-suspense/o-menu.jpg" width=180px alt="Cartaz do filme O Menu">
-        <div class="descricao">  
-          <h2>O Menu</h2>
+        <div class="descricao">
+          <img src="/img/filmes-suspense/o-menu.jpg" width=180px alt="Cartaz do filme O Menu">
+          <div class="descricao1">
+            <h2>O Menu</h2>
           <p>Ano: 2022</p>
           <p>Duração: 1h 48min</p>
           <p>Diretor(a): Mark Mylod</p>
           <p>Gênero: <a href="./filmes-suspense.html">Suspense</a></p>
           <p>Sinopse: Motivados pela possibilidade de comer num restaurante exclusivo, um jovem casal viaja para uma ilha remota. No entanto, eles não contavam com algumas surpresas em meio à fartura do cardápio.</p>
-        </div>
-        <div class="classificacao-streaming">
-          <p>Classificação:</p>
-          <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-          <p>Disponível em:</p>
-          <a href="https://www.starplus.com/video/792d58e6-7d81-47f8-8d37-81e489f9ebc2?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-        </div></div>
+          <div class="nota">
+          <div class="nota1">
+          <h4>Nota do Indicaí:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota2">
+          <h4>Nota da Imprensa:</h4>
+          <img src="/img/ícones/estrela3.svg"></div>
+          <div class="nota3">
+          <h4>Nota dos Usuários:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota4">
+          <h4>Avalie:</h4>
+          <span class="star-rating">
+            <input type="radio" name="rating" value="1"><i></i>
+            <input type="radio" name="rating" value="2"><i></i>
+            <input type="radio" name="rating" value="3"><i></i>
+            <input type="radio" name="rating" value="4"><i></i>
+            <input type="radio" name="rating" value="5"><i></i>
+          </span></div>
+          </div>
+        </div> 
+          <div class="descricao2">
+            <p>Minha lista</p>
+            <button onclick="toggleClass1()" id="btnList1" class="btnAdd" type="submit"></button>
+            <div class="classificacao-streaming">
+              <p>Classificação:</p>
+              <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
+              <p>Disponível em:</p>
+              <a href="https://www.starplus.com/video/792d58e6-7d81-47f8-8d37-81e489f9ebc2?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
+      </div></div>
+    </div>
+    <div class="trailer"><h3>Assista ao trailer:</h3>
+      <iframe width="568" height="320" src="https://www.youtube.com/embed/lfbYsIIFYaw" title="O Menu | Trailer Legendado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </div>
         <div class="filme">
-        <img src="/img/filmes-suspense/ilha-do-medo.jpg" width=180px alt="Cartaz do filme Ilha do Medo">
-        <div class="descricao"> 
-          <h2>Ilha do Medo</h2>
+        <div class="descricao">
+          <img src="/img/filmes-suspense/ilha-do-medo.jpg" width=180px alt="Cartaz do filme Ilha do Medo">
+          <div class="descricao1">
+            <h2>Ilha do Medo</h2>
           <p>Ano: 2010</p>
           <p>Duração: 2h 17min</p>
           <p>Diretor(a): Martin Scorsese</p>
           <p>Gênero: <a href="./filmes-suspense.html">Suspense</a></p>
           <p>Sinopse: Nos anos 1950, a fuga de uma assassina leva o detetive Teddy Daniels e seu parceiro a investigarem o seu desaparecimento de um quarto trancado em um hospital psiquiátrico. Lá, uma rebelião se inicia e o agente terá que enfrentar seus próprios medos.</p>
+          <div class="nota">
+            <div class="nota1">
+            <h4>Nota do Indicaí:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota2">
+            <h4>Nota da Imprensa:</h4>
+            <img src="/img/ícones/estrela3.svg"></div>
+            <div class="nota3">
+            <h4>Nota dos Usuários:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota4">
+            <h4>Avalie:</h4>
+            <span class="star-rating">
+              <input type="radio" name="rating" value="1"><i></i>
+              <input type="radio" name="rating" value="2"><i></i>
+              <input type="radio" name="rating" value="3"><i></i>
+              <input type="radio" name="rating" value="4"><i></i>
+              <input type="radio" name="rating" value="5"><i></i>
+            </span></div>
+            </div>
+          </div> 
+            <div class="descricao2">
+              <p>Minha lista</p>
+              <button onclick="toggleClass2()" id="btnList2" class="btnAdd" type="submit"></button>
+            <div class="classificacao-streaming">
+              <p>Classificação:</p>
+              <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
+              <p>Disponível em:</p>
+              <a href="https://www.netflix.com/watch/70095139?source=35"><img src="/img/ícones/Netflix_icon.svg.webp" alt="Imagem da logo do aplicativo Netflix"></a>
+        </div></div>
+      </div>
+      <div class="trailer"><h3>Assista ao trailer:</h3>
+        <iframe width="568" height="320" src="https://www.youtube.com/embed/gL4rP2prdfg" title="Trailer do filme A Ilha do Medo (2010).mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="classificacao-streaming">
-          <p>Classificação:</p>
-          <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-          <p>Disponível em:</p>
-          <a href="https://www.netflix.com/watch/70095139?source=35"><img src="/img/ícones/Netflix_icon.svg.webp" alt="Imagem da logo do aplicativo Netflix"></a>
-        </div></div> 
+      </div>
           <div class="filme">
-            <img src="/img/filmes-suspense/parasita.jpg" width=180px alt="Cartaz do filme Parasita">
-            <div class="descricao">   
-              <h2>Parasita</h2>
+            <div class="descricao">
+              <img src="/img/filmes-suspense/parasita.jpg" width=180px alt="Cartaz do filme Parasita">
+              <div class="descricao1">    
+                <h2>Parasita</h2>
               <p>Ano: 2019</p>
               <p>Duração: 2h 12min</p>
               <p>Diretor(a): Bong Joon Ho</p>
               <p>Gênero: <a href="./filmes-suspense.html">Suspense</a></p>
               <p>Sinopse: Toda a família de Ki-taek está desempregada, vivendo em um porão sujo e apertado. Por obra do acaso, ele começa a dar aulas de inglês para uma garota de família rica. Fascinados com a vida luxuosa destas pessoas, pai, mãe e filhos bolam um plano para se infiltrar também na abastada família, um a um. No entanto, os segredos e mentiras necessários à ascensão social cobram o seu preço.</p>
-            </div>
-            <div class="classificacao-streaming">
-              <p>Classificação:</p>
-              <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-              <p>Disponível em:</p>
-              <a href="http://www.youtube.com/watch?v=Zf_LRNWpFRs"><img src="/img/ícones/youtube.jpg" alt="Imagem da logo do aplicativo Youtube"></a>
-            </div></div>
+              <div class="nota">
+                <div class="nota1">
+                <h4>Nota do Indicaí:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota2">
+                <h4>Nota da Imprensa:</h4>
+                <img src="/img/ícones/estrela3.svg"></div>
+                <div class="nota3">
+                <h4>Nota dos Usuários:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota4">
+                <h4>Avalie:</h4>
+                <span class="star-rating">
+                  <input type="radio" name="rating" value="1"><i></i>
+                  <input type="radio" name="rating" value="2"><i></i>
+                  <input type="radio" name="rating" value="3"><i></i>
+                  <input type="radio" name="rating" value="4"><i></i>
+                  <input type="radio" name="rating" value="5"><i></i>
+                </span></div>
+                </div>
+                </div> 
+                <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass3()" id="btnList3" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                  <p>Classificação:</p>
+                  <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
+                  <p>Disponível em:</p>
+                  <a href="http://www.youtube.com/watch?v=Zf_LRNWpFRs"><img src="/img/ícones/youtube.jpg" alt="Imagem da logo do aplicativo Youtube"></a>
+            </div></div></div>
+            <div class="trailer"><h3>Assista ao trailer:</h3>
+              <iframe width="568" height="320" src="https://www.youtube.com/embed/m4jfE-TxC24" title="Parasita | Trailer Legendado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+          </div>
             <div class="filme">
-              <img src="/img/filmes-suspense/clube-da-luta.webp" width=180px alt="Cartaz do filme Clube da Luta">
-              <div class="descricao">  
-                <h2>Clube da Luta</h2>
+              <div class="descricao">
+                <img src="/img/filmes-suspense/clube-da-luta.webp" width=180px alt="Cartaz do filme Clube da Luta">
+                <div class="descricao1">     
+                  <h2>Clube da Luta</h2>
                 <p>Ano: 1999</p>
                 <p>Duração: 2h 19min</p>
                 <p>Diretor(a): David Fincher</p>
                 <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-drama.html">Drama</a></p>
                 <p>Sinopse: Um homem deprimido que sofre de insônia conhece um estranho vendedor chamado Tyler Durden e se vê morando em uma casa suja depois que seu perfeito apartamento é destruído. A dupla forma um clube com regras rígidas onde homens lutam. A parceria perfeita é comprometida quando uma mulher, Marla, atrai a atenção de Tyler.</p>
-              </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div>
+                </div> 
+                  <div class="descricao2">
+                    <p>Minha lista</p>
+                    <button onclick="toggleClass4()" id="btnList4" class="btnAdd" type="submit"></button>
+                  <div class="classificacao-streaming">
+                    <p>Classificação:</p>
                 <img src="/img/ícones/18-anos.png" alt="Imagem de classificação indicativa de 18 anos">
                 <p>Disponível em:</p>
                 <a href="https://www.starplus.com/video/cc63442f-3f75-4ebe-9639-2a2aabf7095e?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-              </div></div>
+              </div></div></div>
+              <div class="trailer"><h3>Assista ao trailer:</h3>
+                <iframe width="568" height="320" src="https://www.youtube.com/embed/Fs0-4NLSO2Y" title="Trailer Fight Club Legendado PT-BR (Clube da Luta)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="filme">
-              <img src="/img/filmes-suspense/fragmentado.jpg" width=180px alt="Cartaz do filme Fragmentado">
-              <div class="descricao"> 
-                <h2>Fragmentado</h2>
+              <div class="descricao">
+                <img src="/img/filmes-suspense/fragmentado.jpg" width=180px alt="Cartaz do filme Fragmentado">
+                <div class="descricao1">   
+                  <h2>Fragmentado</h2>
                 <p>Ano: 2017</p>
                 <p>Duração: 1h 57min</p>
                 <p>Diretor(a): M. Night Shyamalan</p>
                 <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-terror.html">Terror</a></p>
                 <p>Sinopse: Kevin possui 23 personalidades distintas e consegue alterná-las quimicamente em seu organismo apenas com a força do pensamento. Um dia, ele sequestra três adolescentes que encontra em um estacionamento. Vivendo em cativeiro, elas passam a conhecer as diferentes facetas de Kevin e precisam encontrar algum meio de escapar.</p>
-              </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div>
+                </div> 
+                  <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass5()" id="btnList5" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                  <p>Classificação:</p>
                 <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
                 <p>Disponível em:</p>
                 <a href="https://www.starplus.com/video/a175a704-90c1-458f-98fd-f6114d0328c7?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-              </div></div>
+              </div></div></div>
+              <div class="trailer"><h3>Assista ao trailer:</h3>
+                <iframe width="568" height="320" src="https://www.youtube.com/embed/vslbpge5r7M" title="Fragmentado - Trailer Oficial 1 (Universal Pictures) [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
               <div class="espacamento-final">
                 <br>
               </div>

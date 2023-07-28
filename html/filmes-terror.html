@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/style-filmes.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="/javascript/padrao.js" defer></script>
+  <script src="/javascript/filmes.js" defer></script>
   <title>Indicaí - Filmes de Terror</title>
 </head>
 <body>
@@ -30,86 +31,227 @@
     <div class="slider1"></div>
     <div class="titulo"><h1>Filmes de <span class="titulo-genero"> TERROR </span> indicados</h1></div>
       <div class="filme">
-        <img src="/img/filmes-terror/casamento-sangrento.jpg" width=180px alt="Cartaz do filme Casamento Sangrento">
-        <div class="descricao">  
-          <h2>Casamento Sangrento</h2>
-          <p>Ano: 2021</p>
-          <p>Duração: 1h 36min</p>
-          <p>Diretor(a): Tyler Gillett, Matt Bettinelli-Olpin</p>
-          <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-suspense.html">Suspense</a></p>
-          <p>Sinopse: Horas após o casamento dos seus sonhos, Grace retorna à casa de campo do novo marido para passar a noite com seus novos sogros. Mas isso não é lua de mel, e Grace logo se vê em uma luta sangrenta pela sobrevivência.</p>
-        </div>
-        <div class="classificacao-streaming">
-          <p>Classificação:</p>
+        <div class="descricao">
+          <img src="/img/filmes-terror/casamento-sangrento.jpg" width=180px alt="Cartaz do filme Casamento Sangrento">
+          <div class="descricao1">
+            <h2>Casamento Sangrento</h2>
+            <p>Ano: 2021</p>
+            <p>Duração: 1h 36min</p>
+            <p>Diretor(a): Tyler Gillett, Matt Bettinelli-Olpin</p>
+            <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-suspense.html">Suspense</a></p>
+            <p>Sinopse: Horas após o casamento dos seus sonhos, Grace retorna à casa de campo do novo marido para passar a noite com seus novos sogros. Mas isso não é lua de mel, e Grace logo se vê em uma luta sangrenta pela sobrevivência.</p>
+          <div class="nota">
+          <div class="nota1">
+          <h4>Nota do Indicaí:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota2">
+          <h4>Nota da Imprensa:</h4>
+          <img src="/img/ícones/estrela3.svg"></div>
+          <div class="nota3">
+          <h4>Nota dos Usuários:</h4>
+          <img src="/img/ícones/estrela4.svg"></div>
+          <div class="nota4">
+          <h4>Avalie:</h4>
+          <span class="star-rating">
+            <input type="radio" name="rating" value="1"><i></i>
+            <input type="radio" name="rating" value="2"><i></i>
+            <input type="radio" name="rating" value="3"><i></i>
+            <input type="radio" name="rating" value="4"><i></i>
+            <input type="radio" name="rating" value="5"><i></i>
+          </span></div>
+          </div>
+        </div> 
+          <div class="descricao2">
+            <p>Minha lista</p>
+            <button onclick="toggleClass1()" id="btnList1" class="btnAdd" type="submit"></button>
+            <div class="classificacao-streaming">
+              <p>Classificação:</p>
           <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
           <p>Disponível em:</p>
           <a href="https://www.starplus.com/video/49292bb0-819c-4234-8831-90c2144610da?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-        </div></div>
+      </div></div>
+    </div>
+    <div class="trailer"><h3>Assista ao trailer:</h3>
+      <iframe width="568" height="320" src="https://www.youtube.com/embed/UYnN9zlzuE4" title="Casamento Sangrento • Trailer Legendado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </div>
         <div class="filme">
-        <img src="/img/filmes-terror/hereditario.jpg" width=180px alt="Cartaz do filme Hereditário">
-        <div class="descricao"> 
-          <h2>Hereditário</h2>
-          <p>Ano: 2018</p>
-          <p>Duração: 2h 06min</p>
-          <p>Diretor(a): Ari Aster</p>
-          <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-drama.html">Drama</a></p>
-          <p>Sinopse: Após a morte da reclusa avó, a família Graham começa a desvendar algumas coisas. Mesmo após a partida da matriarca, ela permanece como se fosse uma sombra sobre a família, especialmente sobre a solitária neta adolescente, Charlie, por quem ela sempre manteve uma fascinação não usual. Com um crescente terror tomando conta da casa, a família explora lugares mais escuros para escapar do infeliz destino que herdaram.</p>
-        </div>
-        <div class="classificacao-streaming">
-          <p>Classificação:</p>
+        <div class="descricao">
+          <img src="/img/filmes-terror/hereditario.jpg" width=180px alt="Cartaz do filme Hereditário">
+          <div class="descricao1">
+            <h2>Hereditário</h2>
+            <p>Ano: 2018</p>
+            <p>Duração: 2h 06min</p>
+            <p>Diretor(a): Ari Aster</p>
+            <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-drama.html">Drama</a></p>
+            <p>Sinopse: Após a morte da reclusa avó, a família Graham começa a desvendar algumas coisas. Mesmo após a partida da matriarca, ela permanece como se fosse uma sombra sobre a família, especialmente sobre a solitária neta adolescente, Charlie, por quem ela sempre manteve uma fascinação não usual. Com um crescente terror tomando conta da casa, a família explora lugares mais escuros para escapar do infeliz destino que herdaram.</p>
+          <div class="nota">
+            <div class="nota1">
+            <h4>Nota do Indicaí:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota2">
+            <h4>Nota da Imprensa:</h4>
+            <img src="/img/ícones/estrela3.svg"></div>
+            <div class="nota3">
+            <h4>Nota dos Usuários:</h4>
+            <img src="/img/ícones/estrela4.svg"></div>
+            <div class="nota4">
+            <h4>Avalie:</h4>
+            <span class="star-rating">
+              <input type="radio" name="rating" value="1"><i></i>
+              <input type="radio" name="rating" value="2"><i></i>
+              <input type="radio" name="rating" value="3"><i></i>
+              <input type="radio" name="rating" value="4"><i></i>
+              <input type="radio" name="rating" value="5"><i></i>
+            </span></div>
+            </div>
+          </div> 
+            <div class="descricao2">
+              <p>Minha lista</p>
+              <button onclick="toggleClass2()" id="btnList2" class="btnAdd" type="submit"></button>
+            <div class="classificacao-streaming">
+              <p>Classificação:</p>
           <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
           <p>Disponível em:</p>
           <a href="https://www.netflix.com/watch/80238910?source=35"><img src="/img/ícones/Netflix_icon.svg.webp" alt="Imagem da logo do aplicativo Netflix"></a>
-        </div></div> 
+        </div></div>
+      </div>
+      <div class="trailer"><h3>Assista ao trailer:</h3>
+        <iframe width="568" height="320" src="https://www.youtube.com/embed/Ui13PlmyZhQ" title="Hereditário | Trailer Legendado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
           <div class="filme">
-            <img src="/img/filmes-terror/corra!.jpg" width=180px alt="Cartaz do filme Corra!">
-            <div class="descricao">   
-              <h2>Corra!</h2>
-              <p>Ano: 2017</p>
-              <p>Duração: 1h 44min</p>
-              <p>Diretor(a): Jordan Peele</p>
-              <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-suspense.html">Suspense</a></p>
-              <p>Sinopse: Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Na luxuosa propriedade dos pais dela, Chris percebe que a família esconde algo muito perturbador.</p>
-            </div>
-            <div class="classificacao-streaming">
-              <p>Classificação:</p>
+            <div class="descricao">
+              <img src="/img/filmes-terror/corra!.jpg" width=180px alt="Cartaz do filme Corra!">
+              <div class="descricao1">    
+                <h2>Corra!</h2>
+                <p>Ano: 2017</p>
+                <p>Duração: 1h 44min</p>
+                <p>Diretor(a): Jordan Peele</p>
+                <p>Gênero: <a href="./filmes-terror.html">Terror</a> / <a href="./filmes-suspense.html">Suspense</a></p>
+                <p>Sinopse: Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Na luxuosa propriedade dos pais dela, Chris percebe que a família esconde algo muito perturbador.</p>
+              <div class="nota">
+                <div class="nota1">
+                <h4>Nota do Indicaí:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota2">
+                <h4>Nota da Imprensa:</h4>
+                <img src="/img/ícones/estrela3.svg"></div>
+                <div class="nota3">
+                <h4>Nota dos Usuários:</h4>
+                <img src="/img/ícones/estrela4.svg"></div>
+                <div class="nota4">
+                <h4>Avalie:</h4>
+                <span class="star-rating">
+                  <input type="radio" name="rating" value="1"><i></i>
+                  <input type="radio" name="rating" value="2"><i></i>
+                  <input type="radio" name="rating" value="3"><i></i>
+                  <input type="radio" name="rating" value="4"><i></i>
+                  <input type="radio" name="rating" value="5"><i></i>
+                </span></div>
+                </div>
+                </div> 
+                <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass3()" id="btnList3" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                  <p>Classificação:</p>
               <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
               <p>Disponível em:</p>
               <a href="https://www.starplus.com/video/1f995680-c0aa-42fa-9a14-f3f7b2eda503?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-            </div></div>
-            <div class="filme">
-              <img src="/img/filmes-terror/um-lugar-silencioso.webp" width=180px alt="Cartaz do filme Um Lugar Silencioso">
-              <div class="descricao">  
-                <h2>Um Lugar Silencioso</h2>
-                <p>Ano: 2018</p>
-                <p>Duração: 1h 30min</p>
-                <p>Diretor(a): John Krasinski</p>
-                <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-terror.html">Terror</a></p>
-                <p>Sinopse: Em uma fazenda nos Estados Unidos, uma família do Meio-Oeste é perseguida por uma entidade fantasmagórica assustadora. Para se protegerem, eles devem permanecer em silêncio absoluto, a qualquer custo, pois o perigo é ativado pela percepção do som.</p>
+            </div></div></div>
+            <div class="trailer"><h3>Assista ao trailer:</h3>
+              <iframe width="568" height="320" src="https://www.youtube.com/embed/mDGV5UucTu8" title="Corra! - Trailer Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
-                <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
-                <p>Disponível em:</p>
-                <a href="https://www.starplus.com/video/6df459cd-29a6-4010-88d2-e45ceab18740?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
-              </div></div>
+          </div>
+            <div class="filme">
+              <div class="descricao">
+                <img src="/img/filmes-terror/um-lugar-silencioso.webp" width=180px alt="Cartaz do filme Um Lugar Silencioso">
+                <div class="descricao1">     
+                  <h2>Um Lugar Silencioso</h2>
+                  <p>Ano: 2018</p>
+                  <p>Duração: 1h 30min</p>
+                  <p>Diretor(a): John Krasinski</p>
+                  <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-terror.html">Terror</a></p>
+                  <p>Sinopse: Em uma fazenda nos Estados Unidos, uma família do Meio-Oeste é perseguida por uma entidade fantasmagórica assustadora. Para se protegerem, eles devem permanecer em silêncio absoluto, a qualquer custo, pois o perigo é ativado pela percepção do som.</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div>
+                </div> 
+                  <div class="descricao2">
+                    <p>Minha lista</p>
+                    <button onclick="toggleClass4()" id="btnList4" class="btnAdd" type="submit"></button>
+                  <div class="classificacao-streaming">
+                    <p>Classificação:</p>
+                    <img src="/img/ícones/14-anos.png" alt="Imagem de classificação indicativa de 14 anos">
+                    <p>Disponível em:</p>
+                    <a href="https://www.starplus.com/video/6df459cd-29a6-4010-88d2-e45ceab18740?distributionPartner=google"><img src="/img/ícones/star-plus.jpg" alt="Imagem da logo do aplicativo Star Plus"></a>
+              </div></div></div>
+              <div class="trailer"><h3>Assista ao trailer:</h3>
+                <iframe width="568" height="320" src="https://www.youtube.com/embed/8W6iMmhVDgE" title="Um Lugar Silencioso | Trailer #1 | Paramount Brasil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="filme">
-              <img src="/img/filmes-terror/a-orfa.webp" width=180px alt="Cartaz do filme A Órfã">
-              <div class="descricao"> 
-                <h2>A Órfã</h2>
-                <p>Ano: 2009</p>
-                <p>Duração: 2h 03min</p>
-                <p>Diretor(a): Jaume Collet-Serra</p>
-                <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-terror.html">Terror</a></p>
-                <p>Sinopse: A tragédia parece acompanhar a vida de Esther apesar dos seus 9 anos de idade. Ela é uma órfã russa e a família que a adotou morreu em um incêndio que também quase a matou. Mas agora uma nova família, os Coleman, a adotou e a vida parece ter entrado nos eixos novamente. Até o dia que uma colega de classe de Esther sofre um acidente mais sério, uma freira é golpeada até a morte e a nova mãe da garota começa a se perguntar se a família de Esther realmente morreu em um incêndio acidental.</p>
-              </div>
-              <div class="classificacao-streaming">
-                <p>Classificação:</p>
-                <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
-                <p>Disponível em:</p>
-                <a href="https://play.hbomax.com/feature/urn:hbo:feature:GXuOr5ggx8puSkwEAAAxR?source=googleHBOMAX&action=openhttps://play.hbomax.com/feature/urn:hbo:feature:GXuOr5ggx8puSkwEAAAxR?source=googleHBOMAX&action=open"><img src="/img/ícones/hbo-max.webp" alt="Imagem da logo do aplicativo Hbo Max"></a>
-              </div></div>
+              <div class="descricao">
+                <img src="/img/filmes-terror/a-orfa.webp" width=180px alt="Cartaz do filme A Órfã">
+                <div class="descricao1">   
+                  <h2>A Órfã</h2>
+                  <p>Ano: 2009</p>
+                  <p>Duração: 2h 03min</p>
+                  <p>Diretor(a): Jaume Collet-Serra</p>
+                  <p>Gênero: <a href="./filmes-suspense.html">Suspense</a> / <a href="./filmes-terror.html">Terror</a></p>
+                  <p>Sinopse: A tragédia parece acompanhar a vida de Esther apesar dos seus 9 anos de idade. Ela é uma órfã russa e a família que a adotou morreu em um incêndio que também quase a matou. Mas agora uma nova família, os Coleman, a adotou e a vida parece ter entrado nos eixos novamente. Até o dia que uma colega de classe de Esther sofre um acidente mais sério, uma freira é golpeada até a morte e a nova mãe da garota começa a se perguntar se a família de Esther realmente morreu em um incêndio acidental.</p>
+                <div class="nota">
+                  <div class="nota1">
+                  <h4>Nota do Indicaí:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota2">
+                  <h4>Nota da Imprensa:</h4>
+                  <img src="/img/ícones/estrela3.svg"></div>
+                  <div class="nota3">
+                  <h4>Nota dos Usuários:</h4>
+                  <img src="/img/ícones/estrela4.svg"></div>
+                  <div class="nota4">
+                  <h4>Avalie:</h4>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span></div>
+                  </div>
+                </div> 
+                  <div class="descricao2">
+                  <p>Minha lista</p>
+                  <button onclick="toggleClass5()" id="btnList5" class="btnAdd" type="submit"></button>
+                <div class="classificacao-streaming">
+                  <p>Classificação:</p>
+                  <img src="/img/ícones/16-anos.png" alt="Imagem de classificação indicativa de 16 anos">
+                  <p>Disponível em:</p>
+                  <a href="https://play.hbomax.com/feature/urn:hbo:feature:GXuOr5ggx8puSkwEAAAxR?source=googleHBOMAX&action=openhttps://play.hbomax.com/feature/urn:hbo:feature:GXuOr5ggx8puSkwEAAAxR?source=googleHBOMAX&action=open"><img src="/img/ícones/hbo-max.webp" alt="Imagem da logo do aplicativo Hbo Max"></a>
+              </div></div></div>
+              <div class="trailer"><h3>Assista ao trailer:</h3>
+                <iframe width="568" height="320" src="https://www.youtube.com/embed/cB5zcyckRzc" title="A Órfã - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
               <div class="espacamento-final">
                 <br>
               </div>
